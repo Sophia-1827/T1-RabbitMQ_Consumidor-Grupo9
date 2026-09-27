@@ -9,19 +9,17 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMqConfig {
-
-    public static final String QUEUE = "Grupo9Queue";
     public static final String EXCHANGE = "Grupo9Exchange";
+    public static final String QUEUE = "Grupo9Queue";
     public static final String ROUTING_KEY = "Grupo9Routing";
-
-    @Bean
-    public Queue fibonacciQueue() {
-        return new Queue(QUEUE, true);
-    }
 
     @Bean
     public DirectExchange fibonacciExchange() {
         return new DirectExchange(EXCHANGE);
+    }
+    @Bean
+    public Queue fibonacciQueue() {
+        return new Queue(QUEUE, true);
     }
 
     @Bean

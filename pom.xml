@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cibertec</groupId>
-    <artifactId>appGrupo9Consumidor</artifactId>
+    <artifactId>T1-RabbitMQ_Consumidor_Grupo9</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>appGrupo9Consumidor</name>
-    <description>appGrupo9Consumidor</description>
+    <name>T1-RabbitMQ_Consumidor_Grupo9</name>
+    <description>T1-RabbitMQ_Consumidor_Grupo9</description>
     <url/>
     <licenses>
         <license/>
@@ -37,6 +37,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-json</artifactId>
         </dependency>
 
         <dependency>
